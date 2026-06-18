@@ -190,7 +190,7 @@ yperf-jo2028/
 
 ```bash
 # 1. Cloner le dépôt
-git clone https://github.com/L-em-hash/PREDICTION-JO-2028-ML.git
+git https://github.com/L-em-hash/Prediction-JO-2028-ml.git
 cd PREDICTION-JO-2028-ML
 
 # 2. Créer un environnement virtuel (recommandé)
@@ -206,16 +206,17 @@ pip install -r requirements.txt
 ## Utilisation
 
 **Étape 1 — Exploration et nettoyage des données**
-Exécuter `fil_rouge.ipynb` de bout en bout (Kernel → Restart & Run All). Ce notebook génère `dataset_final_clean.csv` à la racine du projet.
+Exécuter `netoyage&exploration.ipynb` de bout en bout (Kernel → Restart & Run All). Ce notebook génère `dataset_final_clean.csv` à la racine du projet.
 
 **Étape 2 — Modélisation prédictive**
 Exécuter `modelisation_JO2028.ipynb` de bout en bout. Ce notebook entraîne les modèles et génère `app/model.pkl` ainsi que les fichiers de `data/processed/`.
 
 **Étape 3 — Lancer l'application**
 ```bash
-streamlit run app/app.py
+cd app
+streamlit run app.py 
 ```
-L'application s'ouvre automatiquement dans le navigateur à l'adresse `http://localhost:8501`.
+L'application s'ouvre automatiquement dans le navigateur à l'adresse `http://localhost:8502/`.
 
 ---
 
@@ -230,5 +231,5 @@ L'application s'ouvre automatiquement dans le navigateur à l'adresse `http://lo
 
 ## Auteur
 
-**LAWSON 6 LARTEGO Emmanuella & DOTSU Olympe** — Bachelor 3 Data & IA, YNOV Campus Paris
+**LAWSON-LARTEGO Emmanuella & DOTSU Olympe** — Bachelor 3 Data & IA, YNOV Campus Paris
 Projet réalisé dans le cadre de l'UF Spécialité IA & Data
